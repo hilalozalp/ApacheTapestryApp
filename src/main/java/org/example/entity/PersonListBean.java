@@ -1,9 +1,12 @@
 package org.example.entity;
 
+import org.apache.tapestry5.beaneditor.NonVisual;
+
 import java.time.LocalDate;
 
 public class PersonListBean {
 
+    @NonVisual
     private Long id;
     private String firstname;
     private String lastname;

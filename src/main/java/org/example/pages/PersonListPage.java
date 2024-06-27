@@ -36,21 +36,14 @@ public class PersonListPage {
         System.out.println("SetupRender: Person list size = " + personList.size());
     }
 
-
-    /*Object onSuccess() {
-        personUCC.saveOrUpdatePerson(personEditBean);
-        return this;
-    }*/
-
-   /* Object onActionFromCreate() {
-        System.out.println("Navigating to PersonEditPage to create a new person.");
-        return pageRenderLinkSource.createPageRenderLinkWithContext(PersonEditPage.class, (Object) null);
-    }*/
-
     Object onActionFromCreate() {
         System.out.println("onActionFromCreate: Navigating to PersonEditPage to create a new person.");
         return pageRenderLinkSource.createPageRenderLink(PersonEditPage.class);
     }
 
+    /*Object onActionFromEdit(Long personId) {
+        personEditPage.onActivate(personId);
+        return personEditPage;
+    }*/
 
 }

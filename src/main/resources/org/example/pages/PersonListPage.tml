@@ -8,7 +8,11 @@
 
                 <p><t:actionlink t:id="create" class="btn btn-secondary">Erstelle neue Person</t:actionlink></p>
 
-            <t:grid source="personList" row="personListBean" class="table table-striped" include="firstname, lastname, email, city, country">
+            <t:grid source="personList" row="personListBean" class="table table-striped" add="edit">
+                <!--<p:editCell>
+                    <t:actionlink t:id="edit" context="personListBean.id">Edit</t:actionlink>
+                </p:editCell>-->
+
             </t:grid>
         </div>
     </div>

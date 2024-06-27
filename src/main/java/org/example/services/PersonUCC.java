@@ -9,7 +9,6 @@ public interface PersonUCC {
     void saveOrUpdatePerson(PersonEditBean personEditBean);
     PersonEditBean findPersonById(Long id);
     List<PersonListBean> findAllPersons();
-
     void createTestData();
 
 }

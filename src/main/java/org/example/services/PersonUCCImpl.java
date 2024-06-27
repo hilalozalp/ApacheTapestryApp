@@ -28,10 +28,11 @@ public class PersonUCCImpl implements PersonUCC{
     @Override
     public PersonEditBean findPersonById(Long id) {
         Person person = personDAO.findById(id);
-        return new PersonEditBean(person);
+        if (person != null) {
+            return new PersonEditBean(person);
+        }
+        return null;
     }
-
-
 
     @Override
     public List<PersonListBean> findAllPersons() {

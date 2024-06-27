@@ -1,10 +1,13 @@
 package org.example.entity;
 
 import java.time.LocalDate;
+
+import org.apache.tapestry5.beaneditor.NonVisual;
 import org.apache.tapestry5.beaneditor.Validate;
 
 public class PersonEditBean {
 
+    @NonVisual
     private Long id;
 
     @Validate("required")
