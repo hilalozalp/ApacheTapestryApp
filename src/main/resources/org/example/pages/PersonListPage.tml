@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html t:type="layout" title="Person List" xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd">
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h2>Person List</h2>
+
+                <p><t:actionlink t:id="create" class="btn btn-secondary">Erstelle neue Person</t:actionlink></p>
+
+            <t:grid source="personList" row="personListBean" class="table table-striped" include="firstname, lastname, email, city, country">
+            </t:grid>
+        </div>
+    </div>
+</div>
+
+</html>

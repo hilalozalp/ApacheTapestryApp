@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html t:type="layout" title="Edit Person" xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd">
+<head>
+    <title>Edit Person</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h2>Edit Person</h2>
+            <t:beaneditform object="personEditBean">
+            </t:beaneditform>
+        </div>
+    </div>
+</div>
+</body>
+</html>
